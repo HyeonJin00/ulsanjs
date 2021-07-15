@@ -42,6 +42,10 @@
           p.classList.toggle("done");
         });
 
+        button.addEventListener("click", function (event) {
+          ul.removeChild(event.target.parentNode);
+        });
+
         console.log(li);
       });
     </script>
